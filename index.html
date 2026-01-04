@@ -55,6 +55,84 @@
       nav a:hover {
         color: #22c55e;
       }
+      .hero {
+        background: linear-gradient(180deg, #0b1220 0%, #020617 100%);
+        padding: 100px 24px;
+        color: white;
+      }
+
+      .hero-container {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        align-items: center;
+        gap: 60px;
+      }
+
+      .hero-text h1 {
+        font-size: 48px;
+        line-height: 1.2;
+        margin-bottom: 24px;
+      }
+
+      .hero-text h1 span {
+        color: #22c55e;
+      }
+
+      .hero-text p {
+        font-size: 18px;
+        color: #cbd5e1;
+        max-width: 520px;
+        margin-bottom: 40px;
+      }
+
+      .hero-actions {
+        display: flex;
+        gap: 20px;
+      }
+
+      .btn-primary {
+        background: #22c55e;
+        color: #020617;
+        padding: 14px 28px;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.2s;
+      }
+
+      .btn-primary:hover {
+        background: #16a34a;
+      }
+
+      .btn-secondary {
+        border: 1px solid #334155;
+        color: #e2e8f0;
+        padding: 14px 28px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: border 0.2s, color 0.2s;
+      }
+
+      .btn-secondary:hover {
+        border-color: #22c55e;
+        color: #22c55e;
+      }
+
+      .hero-visual {
+        display: flex;
+        justify-content: center;
+      }
+
+      .shield {
+        font-size: 120px;
+        background: #020617;
+        border: 1px solid #1e293b;
+        border-radius: 24px;
+        padding: 40px;
+      }
     </style>
   </head>
   <body>
@@ -72,5 +150,29 @@
         </nav>
       </div>
     </header>
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>
+            Protect Your System<br />
+            with <span>Beaver Defender</span>
+          </h1>
+
+          <p>
+            Beaver Defender is a modern security solution that protects your
+            infrastructure from threats, attacks, and vulnerabilities.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#" class="btn-primary">Get Started</a>
+            <a href="#" class="btn-secondary">Learn More</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="shield">🛡️</div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
