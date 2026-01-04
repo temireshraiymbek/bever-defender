@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Beaver Defender</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Inter, Arial, sans-serif;
+      }
+
+      header {
+        background: #0b1220;
+        border-bottom: 1px solid #1e293b;
+      }
+
+      .header {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 16px 24px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .logo {
+        font-size: 22px;
+        font-weight: 700;
+        color: #ffffff;
+      }
+
+      .logo span {
+        color: #22c55e;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 32px;
+      }
+
+      nav a {
+        color: #cbd5e1;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        transition: color 0.2s ease;
+      }
+
+      nav a:hover {
+        color: #22c55e;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo">Beaver<span>Defender</span></div>
+
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>
