@@ -176,6 +176,66 @@
         color: #94a3b8;
         font-size: 14px;
       }
+      .projects {
+        background: #0b1220;
+        padding: 100px 24px;
+        color: white;
+      }
+
+      .projects-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .projects h2 {
+        font-size: 36px;
+        margin-bottom: 60px;
+        text-align: center;
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+      }
+
+      .project-card {
+        background: #020617;
+        border: 1px solid #1e293b;
+        border-radius: 20px;
+        padding: 40px 32px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .project-image {
+        font-size: 48px;
+        margin-bottom: 24px;
+      }
+
+      .project-card h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+      }
+
+      .project-card p {
+        font-size: 15px;
+        color: #cbd5e1;
+        line-height: 1.6;
+        margin-bottom: 24px;
+      }
+
+      .project-card a {
+        margin-top: auto;
+        color: #22c55e;
+        text-decoration: none;
+        font-weight: 500;
+        transition: opacity 0.2s;
+      }
+
+      .project-card a:hover {
+        opacity: 0.8;
+      }
     </style>
   </head>
 
@@ -232,6 +292,43 @@
           <div class="stat">
             <h3>100+</h3>
             <span>Systems</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="projects-container">
+        <h2>Our Projects</h2>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">🖥️</div>
+            <h3>Enterprise Firewall</h3>
+            <p>
+              High-performance firewall solution designed for large-scale
+              enterprise infrastructures.
+            </p>
+            <a href="#">View Project →</a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">☁️</div>
+            <h3>Cloud Shield</h3>
+            <p>
+              Cloud-native security platform protecting data and services across
+              multiple environments.
+            </p>
+            <a href="#">View Project →</a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">🧠</div>
+            <h3>AI Threat Detection</h3>
+            <p>
+              Machine learning system that predicts and prevents cyber attacks
+              in real time.
+            </p>
+            <a href="#">View Project →</a>
           </div>
         </div>
       </div>
