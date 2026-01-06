@@ -13,6 +13,10 @@
         font-family: Inter, Arial, sans-serif;
       }
 
+      body {
+        background: #020617;
+      }
+
       header {
         background: #0b1220;
         border-bottom: 1px solid #1e293b;
@@ -23,14 +27,14 @@
         margin: 0 auto;
         padding: 16px 24px;
         display: flex;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
       }
 
       .logo {
         font-size: 22px;
         font-weight: 700;
-        color: #ffffff;
+        color: #fff;
       }
 
       .logo span {
@@ -47,7 +51,6 @@
         color: #cbd5e1;
         text-decoration: none;
         font-size: 15px;
-        font-weight: 500;
       }
 
       nav a:hover {
@@ -57,7 +60,7 @@
       /* HERO */
 
       .hero {
-        background: linear-gradient(180deg, #0b1220 0%, #020617 100%);
+        background: linear-gradient(180deg, #0b1220, #020617);
         padding: 100px 24px;
         color: white;
       }
@@ -121,27 +124,6 @@
         padding: 40px;
       }
 
-      /* FEATURES */
-
-      .features {
-        background: #020617;
-        padding: 100px 24px;
-        color: white;
-      }
-
-      .features-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 32px;
-      }
-
-      .feature-card {
-        background: #0b1220;
-        border: 1px solid #1e293b;
-        border-radius: 16px;
-        padding: 40px 28px;
-      }
-
       /* MISSION */
 
       .mission {
@@ -167,41 +149,7 @@
       .mission-text p {
         font-size: 18px;
         color: #cbd5e1;
-      }
-
-      .mission-stats {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 24px;
-      }
-
-      .stat {
-        background: #020617;
-        border: 1px solid #1e293b;
-        border-radius: 16px;
-        padding: 32px 20px;
-        text-align: center;
-      }
-
-      .stat h3 {
-        font-size: 32px;
-        color: #22c55e;
-
-        transition: transform 0.2s ease, border 0.2s ease;
-      }
-
-      .mission {
-        background: #0b1220;
-        padding: 100px 24px;
-        color: white;
-      }
-
-      .mission-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1.3fr 1fr;
-        gap: 60px;
+        line-height: 1.6;
       }
 
       .mission-stats {
@@ -221,6 +169,12 @@
       .stat h3 {
         color: #22c55e;
         font-size: 32px;
+        margin-bottom: 8px;
+      }
+
+      .stat span {
+        color: #94a3b8;
+        font-size: 14px;
       }
     </style>
   </head>
@@ -250,22 +204,22 @@
             <a href="#" class="btn-secondary">Learn More</a>
           </div>
         </div>
-        <<<<<<< HEAD
+
         <div class="hero-visual">
           <div class="shield">🛡️</div>
         </div>
-        =======
-        <div class="shield">🛡️</div>
-        >>>>>>> 867894cccef6e86249a0d3d1dc204f63dda66230
       </div>
     </section>
 
     <section class="mission">
       <div class="mission-container">
-        <div>
+        <div class="mission-text">
           <h2>Our Mission</h2>
-          <p>Make cybersecurity simple and accessible.</p>
+          <p>
+            Make cybersecurity simple, powerful and accessible for everyone.
+          </p>
         </div>
+
         <div class="mission-stats">
           <div class="stat">
             <h3>99.9%</h3>
