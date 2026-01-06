@@ -22,7 +22,6 @@
         max-width: 1200px;
         margin: 0 auto;
         padding: 16px 24px;
-
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -49,12 +48,12 @@
         text-decoration: none;
         font-size: 15px;
         font-weight: 500;
-        transition: color 0.2s ease;
       }
 
       nav a:hover {
         color: #22c55e;
       }
+
       .hero {
         background: linear-gradient(180deg, #0b1220 0%, #020617 100%);
         padding: 100px 24px;
@@ -64,16 +63,14 @@
       .hero-container {
         max-width: 1200px;
         margin: 0 auto;
-
         display: grid;
         grid-template-columns: 1.2fr 1fr;
-        align-items: center;
         gap: 60px;
+        align-items: center;
       }
 
       .hero-text h1 {
         font-size: 48px;
-        line-height: 1.2;
         margin-bottom: 24px;
       }
 
@@ -84,7 +81,6 @@
       .hero-text p {
         font-size: 18px;
         color: #cbd5e1;
-        max-width: 520px;
         margin-bottom: 40px;
       }
 
@@ -98,13 +94,8 @@
         color: #020617;
         padding: 14px 28px;
         border-radius: 8px;
-        font-weight: 600;
         text-decoration: none;
-        transition: background 0.2s;
-      }
-
-      .btn-primary:hover {
-        background: #16a34a;
+        font-weight: 600;
       }
 
       .btn-secondary {
@@ -113,17 +104,6 @@
         padding: 14px 28px;
         border-radius: 8px;
         text-decoration: none;
-        transition: border 0.2s, color 0.2s;
-      }
-
-      .btn-secondary:hover {
-        border-color: #22c55e;
-        color: #22c55e;
-      }
-
-      .hero-visual {
-        display: flex;
-        justify-content: center;
       }
 
       .shield {
@@ -133,21 +113,11 @@
         border-radius: 24px;
         padding: 40px;
       }
+
       .features {
         background: #020617;
         padding: 100px 24px;
         color: white;
-      }
-
-      .features-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        text-align: center;
-      }
-
-      .features h2 {
-        font-size: 36px;
-        margin-bottom: 60px;
       }
 
       .features-grid {
@@ -161,36 +131,47 @@
         border: 1px solid #1e293b;
         border-radius: 16px;
         padding: 40px 28px;
-        transition: transform 0.2s ease, border 0.2s ease;
       }
 
-      .feature-card:hover {
-        transform: translateY(-6px);
-        border-color: #22c55e;
+      .mission {
+        background: #0b1220;
+        padding: 100px 24px;
+        color: white;
       }
 
-      .feature-icon {
-        font-size: 40px;
-        margin-bottom: 20px;
+      .mission-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        gap: 60px;
       }
 
-      .feature-card h3 {
-        font-size: 20px;
-        margin-bottom: 12px;
+      .mission-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
       }
 
-      .feature-card p {
-        color: #cbd5e1;
-        font-size: 15px;
-        line-height: 1.6;
+      .stat {
+        background: #020617;
+        border: 1px solid #1e293b;
+        border-radius: 16px;
+        padding: 32px;
+        text-align: center;
+      }
+
+      .stat h3 {
+        color: #22c55e;
+        font-size: 32px;
       }
     </style>
   </head>
+
   <body>
     <header>
       <div class="header">
         <div class="logo">Beaver<span>Defender</span></div>
-
         <nav>
           <ul>
             <li><a href="#">Home</a></li>
@@ -201,61 +182,31 @@
         </nav>
       </div>
     </header>
+
     <section class="hero">
       <div class="hero-container">
         <div class="hero-text">
-          <h1>
-            Protect Your System<br />
-            with <span>Beaver Defender</span>
-          </h1>
-
-          <p>
-            Beaver Defender is a modern security solution that protects your
-            infrastructure from threats, attacks, and vulnerabilities.
-          </p>
-
+          <h1>Protect Your System<br />with <span>Beaver Defender</span></h1>
+          <p>Modern security solution for your infrastructure.</p>
           <div class="hero-actions">
             <a href="#" class="btn-primary">Get Started</a>
             <a href="#" class="btn-secondary">Learn More</a>
           </div>
         </div>
-
-        <div class="hero-visual">
-          <div class="shield">🛡️</div>
-        </div>
+        <div class="shield">🛡️</div>
       </div>
     </section>
-    <section class="features">
-      <div class="features-container">
-        <h2>Why Choose Beaver Defender</h2>
 
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-icon">⚡</div>
-            <h3>Real-Time Protection</h3>
-            <p>
-              Instant threat detection and response to keep your system safe
-              24/7.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">🔒</div>
-            <h3>Advanced Security</h3>
-            <p>
-              Multi-layer protection against malware, DDoS attacks, and
-              vulnerabilities.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">📊</div>
-            <h3>Smart Analytics</h3>
-            <p>
-              Detailed logs and insights to monitor and improve your security
-              strategy.
-            </p>
-          </div>
+    <section class="mission">
+      <div class="mission-container">
+        <div>
+          <h2>Our Mission</h2>
+          <p>Make cybersecurity simple and accessible.</p>
+        </div>
+        <div class="mission-stats">
+          <div class="stat"><h3>99.9%</h3><span>Detection</span></div>
+          <div class="stat"><h3>24/7</h3><span>Monitoring</span></div>
+          <div class="stat"><h3>100+</h3><span>Systems</span></div>
         </div>
       </div>
     </section>
