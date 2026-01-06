@@ -129,17 +129,6 @@
         color: white;
       }
 
-      .features-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        text-align: center;
-      }
-
-      .features h2 {
-        font-size: 36px;
-        margin-bottom: 60px;
-      }
-
       .features-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -201,25 +190,37 @@
         transition: transform 0.2s ease, border 0.2s ease;
       }
 
-      .feature-card:hover {
-        transform: translateY(-6px);
-        border-color: #22c55e;
+      .mission {
+        background: #0b1220;
+        padding: 100px 24px;
+        color: white;
       }
 
-      .feature-icon {
-        font-size: 40px;
-        margin-bottom: 20px;
+      .mission-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        gap: 60px;
       }
 
-      .feature-card h3 {
-        font-size: 20px;
-        margin-bottom: 12px;
+      .mission-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
       }
 
-      .feature-card p {
-        color: #cbd5e1;
-        font-size: 15px;
-        line-height: 1.6;
+      .stat {
+        background: #020617;
+        border: 1px solid #1e293b;
+        border-radius: 16px;
+        padding: 32px;
+        text-align: center;
+      }
+
+      .stat h3 {
+        color: #22c55e;
+        font-size: 32px;
       }
     </style>
   </head>
@@ -249,41 +250,34 @@
             <a href="#" class="btn-secondary">Learn More</a>
           </div>
         </div>
+        <<<<<<< HEAD
         <div class="hero-visual">
           <div class="shield">🛡️</div>
         </div>
+        =======
+        <div class="shield">🛡️</div>
+        >>>>>>> 867894cccef6e86249a0d3d1dc204f63dda66230
       </div>
     </section>
-    <section class="features">
-      <div class="features-container">
-        <h2>Why Choose Beaver Defender</h2>
 
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-icon">⚡</div>
-            <h3>Real-Time Protection</h3>
-            <p>
-              Instant threat detection and response to keep your system safe
-              24/7.
-            </p>
+    <section class="mission">
+      <div class="mission-container">
+        <div>
+          <h2>Our Mission</h2>
+          <p>Make cybersecurity simple and accessible.</p>
+        </div>
+        <div class="mission-stats">
+          <div class="stat">
+            <h3>99.9%</h3>
+            <span>Detection</span>
           </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">🔒</div>
-            <h3>Advanced Security</h3>
-            <p>
-              Multi-layer protection against malware, DDoS attacks, and
-              vulnerabilities.
-            </p>
+          <div class="stat">
+            <h3>24/7</h3>
+            <span>Monitoring</span>
           </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">📊</div>
-            <h3>Smart Analytics</h3>
-            <p>
-              Detailed logs and insights to monitor and improve your security
-              strategy.
-            </p>
+          <div class="stat">
+            <h3>100+</h3>
+            <span>Systems</span>
           </div>
         </div>
       </div>
